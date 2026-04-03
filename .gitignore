@@ -1,0 +1,71 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Pp]ublish/
+[Ll]og/
+
+# Visual Studio / VS Code / Rider
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+_ReSharper*/
+*.DotSettings.user
+.idea/
+
+# .NET user-specific files
+*.dbmdl
+*.jfm
+*.pfx
+*.publishsettings
+
+# NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+!**/[Pp]ackages/repositories.config
+.nuget/packages/
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]enchmarkDotNet.Artifacts/
+
+# Logs
+*.log
+logs/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Runtime-generated files
+*.pidb
+*.svclog
+*.scc
+
+# SQL / local DB artifacts
+*.mdf
+*.ldf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local secrets and environment
+appsettings.Development.json
+.env
+.env.*
+
+# Node (if frontend assets/tooling are added)
+node_modules/
+dist/
+
