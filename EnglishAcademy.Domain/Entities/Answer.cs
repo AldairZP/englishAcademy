@@ -9,6 +9,8 @@ public class Answer
     public bool IsCorrect { get; set; }
     public Guid QuestionId { get; init; }
 
+    public ICollection<ExamAnswer> ExamAnswers = new List<ExamAnswer>();
+
     public Answer(string description, bool isCorrect, Guid questionId)
     {
         if (string.IsNullOrWhiteSpace(description)) throw new ArgumentException("description cannot be null or white space");
