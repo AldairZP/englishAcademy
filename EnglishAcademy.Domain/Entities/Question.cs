@@ -6,6 +6,9 @@ public class Question
     public Guid Id { get; init; }
     public string Description { get; set; }
 
+    public ICollection<Answer> Answers = new List<Answer>();
+    public ICollection<ExamAnswer> ExamAnswers = new List<ExamAnswer>();
+    
     public Question(string description)
     {
         if (string.IsNullOrWhiteSpace(description)) throw new ArgumentException("description cannot be null or white space");

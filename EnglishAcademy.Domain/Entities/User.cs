@@ -7,6 +7,8 @@ public class User
     public string UserName { get; set; }
     public string Password { get; set; }
 
+    public ICollection<Exam> Exams { get; private set; } = new List<Exam>();
+
     public User(string userName, string password)
     {
         if (string.IsNullOrWhiteSpace(userName)) throw new ArgumentException("userName cannot be null or white space");
