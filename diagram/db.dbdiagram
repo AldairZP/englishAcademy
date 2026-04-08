@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "darkMode": true,
+  "gridEnabling": true,
+  "detailLevel": "All",
+  "tablePositions": [
+    {
+      "name": "user",
+      "schemaName": "public",
+      "x": 12,
+      "y": 12
+    },
+    {
+      "name": "exam_type",
+      "schemaName": "public",
+      "x": 12,
+      "y": 218
+    },
+    {
+      "name": "exam",
+      "schemaName": "public",
+      "x": 487.431640625,
+      "y": 12
+    },
+    {
+      "name": "exam_question",
+      "schemaName": "public",
+      "x": 1093.7794779521864,
+      "y": 12
+    },
+    {
+      "name": "question",
+      "schemaName": "public",
+      "x": 562.8940376380249,
+      "y": 408.9171478616573
+    },
+    {
+      "name": "answer",
+      "schemaName": "public",
+      "x": 270.8010042599415,
+      "y": 312.78695164426136
+    },
+    {
+      "name": "exam_answer",
+      "schemaName": "public",
+      "x": 1049.7958575464022,
+      "y": 376.9171478616573
+    }
+  ],
+  "tableGroupCollapseStates": [],
+  "stickyNoteLayouts": [],
+  "referencePaths": []
+}
