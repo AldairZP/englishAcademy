@@ -1,0 +1,48 @@
+TABLE user {
+  id integer [pk, not null, increment]
+  username text [not null]
+  email text [not null]
+  password text [not null]
+}
+
+
+TABLE exam_type {
+  id integer [pk, not null, increment]
+  type text [not null]
+}
+
+TABLE exam {
+  id integer [pk, not null, increment]
+
+  user_id integer [not null, ref: > user.id ]
+  exam_type_id integer [not null, ref: > exam_type.id]
+}
+
+
+
+TABLE exam_question {
+  exam_id integer [not null, ref: > exam.id]
+  question_id integer [not null, ref: > question.id]
+}
+
+
+TABLE question {
+  id integer [pk, not null, increment]
+  description text
+}
+
+
+TABLE answer {
+  id integer [pk, not null, increment]
+  description text
+  is_correct bool
+
+  question_id integer [not null, ref: > question.id]
+}
+
+
+TABLE exam_answer {
+  exam_id integer [not null, ref: > exam.id]
+  question_id integer [not null, ref: > question.id]
+  answer_id integer [not null, ref: > answer.id]
+}
