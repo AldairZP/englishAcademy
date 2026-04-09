@@ -3,8 +3,7 @@ using EnglishAcademy.Domain.Entities;
 
 namespace EnglishAcademy.Application.Abstractions.Persistence;
 
-public interface IUserRepository
+public interface IQuestionRepository
 {
-    Task AddAsync(User user);
-    Task<User> GetByIdAsync(Guid id);
+    Task<IReadOnlyList<Question>> GetByIds(IEnumerable<Guid> ids);
 }

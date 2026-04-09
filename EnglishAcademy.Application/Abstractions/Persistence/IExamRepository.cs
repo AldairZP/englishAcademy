@@ -5,7 +5,8 @@ namespace EnglishAcademy.Application.Abstractions.Persistence;
 
 public interface IExamRepository
 {
-    Task<Exam> AddAsync(Exam exam);
-    
-
+    Task AddAsync(Exam exam);
+    Task AddQuestionsAsync(Guid examId, IReadOnlyCollection<Guid> questionIds);
+    Task AddAnswersAsync(IReadOnlyCollection<ExamAnswer> examAnswers);
+    Task<Exam> GetByIdAsync(Guid id);
 }
