@@ -69,3 +69,5 @@ appsettings.Development.json
 node_modules/
 dist/
 
+# dbDiagram
+db.dbdiagram
