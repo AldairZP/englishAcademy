@@ -10,4 +10,8 @@
     <ProjectReference Include="..\EnglishAcademy.Domain\EnglishAcademy.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Contracts\" />
+  </ItemGroup>
+
 </Project>
